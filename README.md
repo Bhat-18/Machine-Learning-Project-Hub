@@ -1,23 +1,23 @@
-# 📊 Store Sales Time-Series Forecasting
+# Store Sales Time-Series Forecasting
 
 This project presents an end-to-end machine learning pipeline for forecasting store sales using historical data. It incorporates modern techniques in feature engineering, interpretable ML (SHAP), and interactive deployment (Streamlit) to provide actionable business insights for inventory planning and demand prediction.
 
-## 📌 Why This Project?
+## Why This Project?
 
 Retail demand forecasting is critical for minimizing overstocking or understocking, optimizing supply chains, and increasing profit margins. This dataset provides a rich blend of temporal, categorical, and promotional features that mirror real-world complexity, making it an ideal candidate for practical, industry-aligned ML modeling.
 
-## 🚀 Project Highlights
+## Project Highlights
 
-- ✅ Real-World Dataset: Sales data from over 100 stores across different product families
-- 📅 Time Series Processing: Includes date-based decomposition (day, month, year, day-of-week)
-- 🧠 ML Models Compared: Linear Regression, Gradient Boosting, and Random Forest Regressor
-- 🥇 Selected Model: Random Forest gave best R² and lowest MAE/RMSE
-- ⚙️ Hyperparameter Tuning: GridSearchCV attempted and compared with default parameters
-- 📈 Model Evaluation: MAE, RMSE, and R² scores provided
-- 🧠 Model Explainability: SHAP used to visualize feature impact
-- 🌐 Deployment Ready: Interactive Streamlit UI for predictions and SHAP force plots
+-  Real-World Dataset: Sales data from over 100 stores across different product families
+-  Time Series Processing: Includes date-based decomposition (day, month, year, day-of-week)
+-  ML Models Compared: Linear Regression, Gradient Boosting, and Random Forest Regressor
+-  Selected Model: Random Forest gave best R² and lowest MAE/RMSE
+-  Hyperparameter Tuning: GridSearchCV attempted and compared with default parameters
+-  Model Evaluation: MAE, RMSE, and R² scores provided
+-  Model Explainability: SHAP used to visualize feature impact
+-  Deployment Ready: Interactive Streamlit UI for predictions and SHAP force plots
 
-## 🗃️ Dataset Files Used
+##  Dataset Files Used
 
 - `train.csv` – Historical sales training data  
 - `stores.csv` – Store metadata  
@@ -26,7 +26,7 @@ Retail demand forecasting is critical for minimizing overstocking or understocki
 - `holidays_events.csv` – National/local holidays metadata  
 - `test.csv` – Data for final prediction submission  
 
-## 🧪 Tech Stack
+##  Tech Stack
 
 | Tool/Library       | Purpose                          |
 |--------------------|----------------------------------|
@@ -38,7 +38,7 @@ Retail demand forecasting is critical for minimizing overstocking or understocki
 | `Matplotlib`       | Visualizations                   |
 | `Joblib`           | Model serialization              |
 
-## 📉 Model Performance
+##  Model Performance
 
 | Model               | MAE    | RMSE   | R²     |
 |--------------------|--------|--------|--------|
@@ -46,15 +46,15 @@ Retail demand forecasting is critical for minimizing overstocking or understocki
 | Gradient Boosting  | 97.66  | 221.51 | 0.9362 |
 | **Random Forest**  | **46.32** | **155.33** | **0.9686** |
 
-➡️ **Random Forest** was selected as the final model due to its strong generalization and low error metrics without tuning.
+➡ **Random Forest** was selected as the final model due to its strong generalization and low error metrics without tuning.
 
-## 🧠 SHAP Visuals
+## SHAP Visuals
 
 - **Feature importance plot**: Understand which features influence predictions
 - **Force plots**: Visualize contributions to individual predictions
 - **Table with exact SHAP values**: Exportable and inspectable
 
-## 📺 Streamlit App
+##  Streamlit App
 
 - Interactive UI with:
   - Feature input sliders / dropdowns
@@ -66,7 +66,7 @@ To run:
 streamlit run Untitled-1-fixed.py
 ```
 
-## 📂 Directory Structure
+##  Directory Structure
 
 ```
 .
@@ -78,15 +78,13 @@ streamlit run Untitled-1-fixed.py
 └── streamlit_app.py  ← (Optional)
 ```
 
-## ✍️ Author
+##  Author
 
 **Bhanuprakash Bhat**  
-🛡️ Master's in Computer Science (Cybersecurity Major)  
-💼 Part-time Security Analyst | Data Science & AI Enthusiast  
-🔗 GitHub: [your_username]  
-🔗 LinkedIn: [your_link]
+ Master's in Data Science with AI  
+ Part-time 
 
-## 📌 Future Enhancements
+##  Future Enhancements
 
 - Integrate Prophet/LSTM for time-series modeling
 - Add support for retraining with new data
